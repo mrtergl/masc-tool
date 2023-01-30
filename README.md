@@ -23,8 +23,27 @@ The *Malware Analyse* option is used to scan a suspected file on the machine. It
 
 | <img src="Images/malware-analyse.png"/> |
 |-----------------------------------------|
-| **Malware Analysis**                    |
+| **Malware Analysis**                    |             
 
 
-1. ### Formatting file to HEX
+1. #### Formatting file to HEX
+In this option, the file name to be converted to *HEX* format is taken as input. The file name is searched in the C folder . It'll check if this file exists in C.
+In the next step, the obtained file is read in binary format. Then it is grouped as _HEX_ and _ASCII_ together with the functions in the image. The user is then asked if the file is ready and if they want to open it.
+<br>
 
+| <img src="Images/hex-file.png"/>   |
+|------------------------------------|
+| **Output: HEX format of the file** | 
+
+#### Listing IPs and URLs on the file
+
+In this option, the IP and URLs in the selected file are listed. For this listing, the IPs and URLs that the file communicates with are revealed as a result of a regex-based search.
+
+| <img src="Images/ip-url.png"/>       |
+|--------------------------------------|
+| **Output: IPs and URLs in the file** | 
+
+<br>
+
+
+## Malware Analyse
