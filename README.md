@@ -4,10 +4,10 @@ Tool has two different option at first. **Malware Analyse** option can analyse m
 **Security Analyse** is for analyse any `.exe` file on the device and to inform the person using the tool whether the file is harmful or not. With 6 different options, you can query the suspected file via VirusTotal and the results can be returned.
 
 
-<br>
-|<img src="Images/main_menu.png">|
-|---------|
-| Main Menu |
+| <img src="Images/main-menu.png"/> |
+|-----------------------------------|
+| **Main Menu**                     |
+
 <br>
 
 ## To Run Project in Terminal
@@ -18,3 +18,13 @@ Tool has two different option at first. **Malware Analyse** option can analyse m
 <br>
 
 ## Malware Analyse
+
+The *Malware Analyse* option is used to scan a suspected file on the machine. It saves the file in HEX format or outputs the IP and URLs in the file to make it easier for the analysts. Outputs the file information of the file whose name is entered.
+
+| <img src="Images/malware-analyse.png"/> |
+|-----------------------------------------|
+| **Malware Analysis**                    |
+
+
+1. ### Formatting file to HEX
+
