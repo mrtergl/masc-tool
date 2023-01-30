@@ -1,14 +1,9 @@
 from __future__ import print_function
 
 import argparse
-from ctypes import Structure
-from datetime import datetime
 import hashlib
-import time
-from colorama import Style,Fore,Back
-from pefile import PE
+from colorama import Style,Fore
 import os
-import win32com.client
 import binascii
 import pefile
 

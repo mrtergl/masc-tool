@@ -1,0 +1,8 @@
+colorama~=0.4.6
+requests~=2.28.2
+psutil~=5.9.4
+WMI~=1.5.1
+pandas~=1.5.3
+pefile~=2022.5.30
+python-cfonts==1.5.2
+browser-history==0.3.2

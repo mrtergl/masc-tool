@@ -1,9 +1,6 @@
-from ast import Try
 from genericpath import exists
 import hashlib
 from browser_history.browsers import Chrome
-from browser_history.utils import default_browser
-from matplotlib.font_manager import json_dump
 import requests
 import json
 import metadata
@@ -12,17 +9,14 @@ import time
 import wmi
 from pathlib import Path
 import pandas as pd
-from re import T
 import re
 import psutil
-from pprint import pprint as pp
 from cfonts import render
 from subprocess import check_output
 import os
-import win32com.client as win32
-from colorama import Fore, Back, Style
-from hexdump import HexDump
-import FindURL
+from colorama import Fore, Style
+from malware_analysis.hexdump import HexDump
+from malware_analysis import find_url
 from datetime import datetime, timezone
 
 
@@ -360,9 +354,9 @@ def number_to_string(argument):
         case 0:
             exit()
         case 1:
-            file = input(str(Style.BRIGHT+Fore.GREEN +
+            file = input(str(Style.BRIGHT+Fore.YELLOW +
                          "Serach .exe file to analyse: "+Style.RESET_ALL))
-            print(Style.NORMAL+Fore.LIGHTGREEN_EX +
+            print(Style.NORMAL+Fore.YELLOW +
                   "\nLooking for file..."+Style.RESET_ALL)
             f = find(file)
             object = metadata.metadata()
@@ -377,7 +371,7 @@ def number_to_string(argument):
                       Style.RESET_ALL+' -- Get IP and URLs in File')
                 print(Style.BRIGHT+Fore.YELLOW+'0' +
                       Style.RESET_ALL+' -- Return Main Menu"\n')
-                options = int(input(Style.BRIGHT+Fore.LIGHTGREEN_EX +
+                options = int(input(Style.BRIGHT+Fore.YELLOW +
                               'Enter Your Choice: '+Style.RESET_ALL))
                 match options:
                     case 0:
@@ -386,7 +380,7 @@ def number_to_string(argument):
                         object = HexDump()
                         object.main(f, file)
                     case 2:
-                        object = FindURL.FindUrl()
+                        object = find_url.FindUrl()
                         object.main(f, file)
         case 2:
             print("\n")
@@ -404,7 +398,7 @@ def number_to_string(argument):
                   ' -- Scan all the processes'+Style.RESET_ALL)
             print(Style.BRIGHT+Fore.YELLOW+'0' +
                   Style.RESET_ALL+' -- Return Main Menu\n')
-            option = int(input(Style.BRIGHT+Fore.LIGHTGREEN_EX +
+            option = int(input(Style.BRIGHT+Fore.YELLOW +
                          'Enter Your Choice: '+Style.RESET_ALL))
             System_analyse(option)
 
@@ -429,7 +423,7 @@ def menu():
         print(Style.BRIGHT+Fore.YELLOW+'6'+Style.RESET_ALL +
               ' -- Scan all the processes'+Style.RESET_ALL)
         print(Style.BRIGHT+Fore.YELLOW+'0'+Style.RESET_ALL+' -- Exit\n')
-        option = int(input(Style.BRIGHT+Fore.LIGHTGREEN_EX +
+        option = int(input(Style.BRIGHT+Fore.LIGHTYELLOW_EX +
                      'Enter Your Choice: '+Style.RESET_ALL))
 
         number_to_string(option)
@@ -461,7 +455,7 @@ def main_menu():
         print(Style.BRIGHT+Fore.YELLOW+'2'+Style.RESET_ALL +
               ' -- System Analyse'+Style.RESET_ALL)
         print("\n")
-        option = int(input(Style.BRIGHT+Fore.LIGHTGREEN_EX +
+        option = int(input(Style.BRIGHT+Fore.YELLOW +
                      'Enter Your Choice: '+Style.RESET_ALL))
         number_to_string(option)
 
