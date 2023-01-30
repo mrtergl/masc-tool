@@ -3,7 +3,6 @@
 Tool has two different option at first. **Malware Analyse** option can analyse malicious software with `.exe` extension running on the machine. However, it can be detected with which IPs or URLs that malware communicates.
 **Security Analyse** is for analyse any `.exe` file on the device and to inform the person using the tool whether the file is harmful or not. With 6 different options, you can query the suspected file via VirusTotal and the results can be returned.
 
-
 <br>
 |<img src="Images/main_menu.png">|
 |---------|
