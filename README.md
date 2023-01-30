@@ -5,7 +5,6 @@ Tool has two different option at first. **Malware Analyse** option can analyse m
 
 <br>
 |<img src="Images/main_menu.png">|
-|---------|
 | Main Menu |
 <br>
 
