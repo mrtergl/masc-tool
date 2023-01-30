@@ -24,7 +24,7 @@ The *Malware Analyse* option is used to scan a suspected file on the machine. It
 | <img src="Images/malware-analyse.png"/> |
 |-----------------------------------------|
 | **Malware Analysis**                    |             
-
+<br>
 
 1. #### Formatting file to HEX
 In this option, the file name to be converted to *HEX* format is taken as input. The file name is searched in the C folder . It'll check if this file exists in C.
@@ -34,10 +34,11 @@ In the next step, the obtained file is read in binary format. Then it is grouped
 | <img src="Images/hex-file.png"/>   |
 |------------------------------------|
 | **Output: HEX format of the file** | 
+<br>
 
-#### Listing IPs and URLs on the file
+2. #### Listing IPs and URLs on the file
 
-In this option, the IP and URLs in the selected file are listed. For this listing, the IPs and URLs that the file communicates with are revealed as a result of a regex-based search.
+In this option, the _IPs_ and _URLs_ in the selected file are listed. For this listing, the IPs and URLs that the file communicates with are revealed as a result of a regex-based search.
 
 | <img src="Images/ip-url.png"/>       |
 |--------------------------------------|
@@ -46,4 +47,29 @@ In this option, the IP and URLs in the selected file are listed. For this listin
 <br>
 
 
-## Malware Analyse
+## System Analyse
+
+With the system analyse option, `.exe` files on the device can be queried on _VirusTotal_ and the IP addresses that the device connects to can be examined.
+
+| <img src="Images/system-analyse.png"/> |
+|----------------------------------------|
+| **System Analyse**                     | 
+
+<br>
+
+1. #### Browser History Control
+
+
+2. #### Checking all Windows Services
+
+
+3. #### Get Startup Files
+
+
+4. #### Netstat Connection Table and Foreign IP addresses
+
+
+5. #### VirusTotal File Upload and Analyse
+
+
+6. #### Scan All the Process 
