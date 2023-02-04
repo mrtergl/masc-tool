@@ -403,8 +403,8 @@ def number_to_string(argument):
 
 def menu():
     while True:
-        output = render('SecTool', colors=[
-            'green', 'white'], align='center', font='slick')
+        output = render('masc', colors=[
+            'red',], align='center', font='slick')
         print(output)
         print(Style.BRIGHT + Fore.YELLOW + '1' + Style.RESET_ALL +
               ' -- File Analyse' + Style.RESET_ALL)
@@ -445,8 +445,8 @@ def System_analyse(arg):
 
 def main_menu():
     while True:
-        output = render('SecTool', colors=[
-            'green', 'white'], align='center', font='slick')
+        output = render('masc', colors=[
+            'red', 'green'], align='center', font="block", letter_spacing=3)
         print(output)
         print(Style.BRIGHT + Fore.YELLOW + '1' + Style.RESET_ALL +
               ' -- File Analyse' + Style.RESET_ALL)
@@ -454,7 +454,7 @@ def main_menu():
               ' -- System Analyse' + Style.RESET_ALL)
         print("\n")
         option = int(input(Style.BRIGHT + Fore.LIGHTGREEN_EX +
-                           'Enter Your Choice: ' + Style.RESET_ALL + Style.BRIGHT + Fore.YELLOW))
+                           'Enter Your Choice: ' + Style.RESET_ALL))
         number_to_string(option)
 
 
