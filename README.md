@@ -93,11 +93,31 @@ With the system analyse option, `.exe` files on the device can be queried on **V
 
     | <img src="Images/netstat.png"/> |
     |----------------------------------------|
-    | **Netstat Table and Foreign IP Addresses**              | 
+    | **Netstat Table**         |
 
-<br>
+    | <img src="Images/netstat2.png"/> |
+    |----------------------------------------|
+    | **Foreign IP Addresses VirusTotal query**                            |
+
+    <br>
 
 5. #### VirusTotal File Upload and Analyse
+    
+    With this option, you can upload the suspected file to **VirusTotal** and get the file analysis after the upload is complete. First, the file name to be uploaded is entered and the file is searched in the _**C**_ directory. Once the file is found, it is uploaded to VirusTotal.
+    
+    | <img src="Images/file-upload.png"/> |
+    |----------------------------------------|
+    | **VirusTotal File Upload**     |
 
-
+    <br>
+   
 6. #### Scan All the Process 
+
+    With this option, **all processes** running on the device are queried with **VirusTotal**. First, all running processes and their unique **hashes** are obtained.
+    
+    | <img src="Images/process-scaning.png"/>  |
+    |----------------------------------------|
+    | **Process Scan** |
+    
+    Obtained hashes are queried one by one with the help of **VirusTotal API**. Query results are saved in an Excel file, the process can be followed from the terminal.
+
